@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ProductsLinearLayout">
+    <TableLayout
+        android:id="@+id/ProductsTableLayout"
+        android:layout_width="342dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/ProductsTopTextView0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Products"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_column="0"
+                />
+            <TextView
+                android:id="@+id/ProductsTopTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:text="Stock"
+                android:textSize="20sp"
+                android:layout_column="1"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="148dp"
+        android:layout_height="120dp"
+        android:background="#00ffffff"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/ProductsBack"
+        android:layout_gravity="end" />
+
+</LinearLayout>
